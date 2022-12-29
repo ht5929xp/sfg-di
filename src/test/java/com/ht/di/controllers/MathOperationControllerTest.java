@@ -4,6 +4,7 @@ import com.ht.di.service.Addition;
 import com.ht.di.service.Average;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.stereotype.Service;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,7 +17,6 @@ class MathOperationControllerTest {
     void setUp() {
         additionController = new MathOperationController(new Addition());
         averageController = new MathOperationController(new Average());
-
     }
 
     @Test
